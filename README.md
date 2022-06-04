@@ -70,7 +70,7 @@ option_settings:
 
 #### DEPLOYED URL
 
-* **SITE**: http://spdcloud-production.eba-mbmntigr.eu-west-2.elasticbeanstalk.com/
+* **SITE**: http://spdgrupo2a-env.eba-uruptyfp.us-east-1.elasticbeanstalk.com/
 
 
 >##  Azure
@@ -88,7 +88,7 @@ https://www.youtube.com/watch?v=0wWjGV3zva4&ab_channel=GLUGMVIT
 ```http://<app-name>.azurewebsites.net```
 
 #### DEPLOYED URL
-* **SITE**: http://spdcloud.azurewebsites.net/
+* **SITE**: https://spd-grupo2a.azurewebsites.net/
 
 > ## Google Cloud Platform
 Usamos o seguinte tutorial:
@@ -169,4 +169,4 @@ application = get_wsgi_application()
 - Correr o comando ```gcloud app deploy```
 
 #### DEPLOYED URL
-* **SITE**: https://spd-multi-cloud-onboard-p2.ew.r.appspot.com/
+* **SITE**: https://spd-grupo2a.ew.r.appspot.com/
