@@ -1,5 +1,5 @@
 # SPD Cloud
-> a63971, a64007, a64014, a64591, a64592
+> a64583, a64586, a64587, a64590
 
 # Primeiros passos para projeto em DJANGO
 ## Criar ambiente virtual e instalar o django
@@ -42,11 +42,11 @@ Vá para o site de login do AWS Educate, em https://www.awseducate.com/signin/.
 ```pip freeze > requirements.txt```
 3. Criar diretoria onde serão guardados os Scripts para configuração do servidor
 ```mkdir .ebextensions```
-4. Criar ficheiro na diretoria ```~/SPDCloud/.ebextensions/django.config``` com o seguinte informação: (**Atenção:** O *WSGIPath* deverá estar correto)
+4. Criar ficheiro na diretoria ```~/spd-grupo2a/.ebextensions/django.config``` com o seguinte informação: (**Atenção:** O *WSGIPath* deverá estar correto)
 ```
 option_settings:
   aws:elasticbeanstalk:container:python:
-    WSGIPath: SPDCloud.wsgi:application
+    WSGIPath: spd-grupo2a.wsgi:application
 ```
 5. Desativar o ambiente virtual
 ```deactivate```
@@ -60,7 +60,7 @@ option_settings:
 (aws-access-id)
 - 
 2. Criar um ambiente, neste caso criamos um ambiente de produção
-```eb create SPDCloud-Production```
+```eb create spd-grupo2a-Production```
 3. Verificar o estado do ambiente criado
 ```eb status``` ou ```eb open```
 4. Caso tenhamos feito alguma atualização do código, devemos fazer **deploy**
@@ -75,8 +75,7 @@ option_settings:
 
 >##  Azure
 Usamos os seguintes tutoriais:
-https://docs.microsoft.com/pt-pt/azure/app-service/tutorial-python-postgresql-app?tabs=bash%2Cclone
-https://docs.microsoft.com/pt-pt/azure/app-service/quickstart-python?tabs=bash&pivots=python-framework-django
+https://www.youtube.com/watch?v=0wWjGV3zva4&ab_channel=GLUGMVIT
 ### Requisitos
 - Tenha uma conta Azure com uma subscrição ativa. Crie uma conta gratuita.
 - Instale python 3.6 ou superior. ```py -3 --version```
@@ -104,8 +103,8 @@ https://bennettgarner.medium.com/deploying-a-django-application-to-google-app-en
 
 
 ### Criar aplicação
-1. Correr comando ```gcloud app create --project=spd-multi-cloud-onboard-p2```
-2. Escolher onde queremos o servidor, no nosso caso escolhemos o 9 (europe-west)
+1. Correr comando ```gcloud app create --project=spd-grupo2a```
+2. Escolher onde queremos o servidor, no nosso caso escolhemos o 11 (europe-west)
 
 ### Adicionar ficheiros e requisitos à aplicação
 1. Na diretoria ```/app.yaml```
